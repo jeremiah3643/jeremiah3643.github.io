@@ -1,18 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+<title>Jeremiah Pritchard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="/styles.css">
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<body id="myPage">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="styles.css?v=1.0">
+    <!-- Image Header -->
+    <div id="header-color" class="w3-display-container w3-animate-opacity">
+        <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+        </div>
 
-</head>
+        <div id="top-pic" class="w3-quarter">
+            <img id="top-pic" src="/img/myPic.jpg" alt="Boss">
+            <h3 class="top-header" style="font-size:36px; text-align: center; ">Jeremiah Pritchard</h3>
+            <p class="top-header" style="margin-left:35%;font-size: 30px; text-align: center;">Software Developer</p>
+        </div>
+    </div>
+    <!-- Flex Container -->
+    <div class="flexContainer">
+        <div class="w3-container w3-padding-64 w3-center" id="aboutMe">
+            <h2 class="headers">About Me:</h2>
+            <p class="fillerText" >U.S. Navy Veteran who found a passion in coding. Coming from an IT background in the Navy schooled in
+                System Administration and Network Security,
+                I decided to transition into coding. As a passionate musician I figured I could leverage my creative
+                side to create applications. So far I have fallen in love with Software Development.</p>
+        </div>
+        <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="portfolio">
+            <div class="w3-quarter">
+                <h2 class="headers">Portfolio</h2>
+               <a id="projectTag" href="https://projectforum123.herokuapp.com/"> <h3>Project Forum</h3></a>
+               <p class="fillerText">I built this application to test my abilities. Using ReactJS to build a complete Front-End application, I was testing my ability to replicate a Full-Stack 
+                   application. I used JSON server as a stand in for a Back-End. I also styled my application using SemanticUI CSS classes. Project Forum is essentially a clean looking forum where users can create an account and post topics
+                    and post inside those topics. Users are also given the ability to follow a topic and have posts inside that topic show up in their own homepage.</p>
+            </div>
+            <p style="font-size:22px;">Link: <a href="https://projectforum123.herokuapp.com/">Project Forum</a></p>
+            </div>
+        </div>
+        <div class="contactFlex">
+            <div class="contact">
+                <h2 style="font-size:24px;">Contact Me:</h2>
+                <h3>LinkedIn:</h3>
+                <a  href="https://www.linkedin.com/in/jpritchard3643"> <p>https://www.linkedin.com/in/jpritchard3643</p></a>
+                <h3>Github:</h3>
+                <a href="https://github.com/jeremiah3643">https://github.com/jeremiah3643</a>
+                <h3>Email:</h3>
+                <p>jeremiah3643@gmail.com</p>
+            </div>
+        </div>
 
-<body>
-  <script src="js/scripts.js"></script>
+    
+    </footer>
+
+    <script>
+        // Script for side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "300px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+
+        // Close side navigation
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
 </body>
+
 </html>
